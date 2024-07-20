@@ -7,7 +7,7 @@ JOIN salaries s ON e.emp_no = s.emp_no;
 
 /* List the first name, last name, and hire date for the employees who were hired in 1986.*/
 
-SELECT e.emp_no, e.last_name, e.hire_date
+SELECT e.emp_no, e.first_name, e.last_name, e.hire_date
 FROM employees e
 WHERE hire_date BETWEEN '1986-01-01' AND '1986-12-31';
 
